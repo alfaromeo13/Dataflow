@@ -6,6 +6,9 @@ DataFlow isn't just another file transfer tool – it's a game-changer! Our plat
 
 ![image](slika.png)
 
+## User Privacy:
+DataFlow prioritizes user privacy by not storing any user information on the server. Files are transferred directly to end-users without compromising user data integrity.
+
 ## New Protocol:
 DataFlow adopts a revolutionary green protocol that optimizes file transfer efficiency. Users can send files of any size, up to hexabytes, ensuring a scalable and versatile file-sharing experience.
 <p align="center">
@@ -16,6 +19,3 @@ DataFlow adopts a revolutionary green protocol that optimizes file transfer effi
 The app uses TLS 1.3 to encrypt data during transmission, ensuring the highest level of security for file transfers. All information sent via Dataflow is encrypted, providing a robust layer of protection for user data.
 
 ![image](slika113.png)
-
-## User Privacy:
-DataFlow prioritizes user privacy by not storing any user information on the server. Files are transferred directly to end-users without compromising user data integrity.
