@@ -402,7 +402,7 @@ public class Interface {
                             if (response) {
                                 startTime = Instant.now();
                                 this.speed.setVisible(true);
-                                slika.setIcon(new ImageIcon(Objects.requireNonNull(MainClient.class.getResource("/Images/upload22.png"))));
+                                slika.setIcon(new ImageIcon(Objects.requireNonNull(MainClient.class.getResource("/Images/speed2.png"))));
                                 slika.setVisible(true);
                                 new FileSender(this, 0).execute();
                             } else {
@@ -484,7 +484,7 @@ public class Interface {
                     } else if (sender.equals("######")) {
                         this.speed.setVisible(true);
                         startTime = Instant.now();
-                        slika.setIcon(new ImageIcon(Objects.requireNonNull(MainClient.class.getResource("/Images/download.png"))));
+                        slika.setIcon(new ImageIcon(Objects.requireNonNull(MainClient.class.getResource("/Images/speed2.png"))));
                         slika.setVisible(true);
                         int n = 0;
                         byte[] buf = new byte[8192];
