@@ -1,5 +1,4 @@
-# DataFlow (v1.0)
-
+# DataFlow-client(v1.0)
 
 Welcome to DataFlow – Where File Transfer is a Breeze! Ready to break free from the constraints of file size limits and unreliable transfers? Say hello to DataFlow, your go-to solution for seamless and secure file transfers of any size. From crucial documents to hefty multimedia files and large datasets, DataFlow ensures your files reach their destination swiftly and securely. Get ready to experience the magic of effortless file transfers with DataFlow today!
 
@@ -9,15 +8,14 @@ DataFlow isn't just another file transfer tool – it's a game-changer! Our plat
 
 ## New Protocol:
 DataFlow adopts a revolutionary green protocol that optimizes file transfer efficiency. Users can send files of any size, up to hexabytes, ensuring a scalable and versatile file-sharing experience.
+<p align="center">
+  <img src="slika112.png"/>
+</p>
 
 ## Secure Data Encryption:
 The app uses TLS 1.3 to encrypt data during transmission, ensuring the highest level of security for file transfers. All information sent via Dataflow is encrypted, providing a robust layer of protection for user data.
 
+![image](slika113.png)
+
 ## User Privacy:
 DataFlow prioritizes user privacy by not storing any user information on the server. Files are transferred directly to end-users without compromising user data integrity.
-
-## Faster File Transactions:
-The unique green protocol and efficient use of TLS 1.3 contribute to faster and more streamlined file transactions. Experience swift and secure file transfers with Dataflow.
-
-## Supported File Types:
-DataFlow supports the transfer of various file types, including but not limited to text documents, images, videos, and more.
