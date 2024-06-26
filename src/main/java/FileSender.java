@@ -60,10 +60,10 @@ public class FileSender extends SwingWorker<Integer, Integer> {
         }
         long estimatedTime;
         //create new file input stream for file
-        FileInputStream fis = new FileInputStream(file);
+        BufferedInputStream bis = new BufferedInputStream(new FileInputStream(file));
         long startTime = System.currentTimeMillis();
         //read parts of a file and write them to dos
-        while ((n = fis.read(buf, 0, (int) Math.min(buf.length, fileSize))) != -1) {
+        while ((n = bis.read(buf, 0, (int) Math.min(buf.length, fileSize))) != -1) {
             current += n;
             int percentLoaded = (int) (100 * current / fileSize);
             dos.write(buf, 0, n);
@@ -88,7 +88,7 @@ public class FileSender extends SwingWorker<Integer, Integer> {
             dos.flush();
         }
         myInterface.setSum(sum);
-        fis.close();
+        bis.close();
         return 1;
     }
 

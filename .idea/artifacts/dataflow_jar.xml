@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="dataflow:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/dataflow_jar</output-path>
+    <root id="archive" name="dataflow.jar">
+      <element id="module-output" name="dataflow" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/src/main/resources/Sounds/jaco-mp3-player-0.9.3.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
