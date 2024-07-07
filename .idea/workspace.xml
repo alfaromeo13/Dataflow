@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0263efc9-0345-45b0-a751-3a598de4bb24" name="Changes" comment="final version.">
+    <list default="true" id="0263efc9-0345-45b0-a751-3a598de4bb24" name="Changes" comment="Optimize transfer speed">
       <change afterPath="$PROJECT_DIR$/Received files/1312721.jpeg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Received files/564931.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Received files/pexels-eberhard-grossgasteiger-2098428.jpg" afterDir="false" />
@@ -17,7 +17,6 @@
       <change afterPath="$PROJECT_DIR$/Received files/pexels-soner-arkan-13337125.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Received files/greentooth1.mp4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FileSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FileSender.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +123,7 @@
       <workItem from="1718189715995" duration="2975000" />
       <workItem from="1718877867523" duration="513000" />
       <workItem from="1719420038656" duration="1685000" />
-      <workItem from="1720376203573" duration="2136000" />
+      <workItem from="1720376203573" duration="3172000" />
     </task>
     <task id="LOCAL-00001" summary="final version">
       <option name="closed" value="true" />
@@ -142,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719420091005</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Optimize transfer speed">
+      <option name="closed" value="true" />
+      <created>1720371405450</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1720371405450</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +158,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="final version" />
     <MESSAGE value="final version." />
-    <option name="LAST_COMMIT_MESSAGE" value="final version." />
+    <MESSAGE value="Optimize transfer speed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Optimize transfer speed" />
   </component>
 </project>
