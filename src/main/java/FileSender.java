@@ -1,12 +1,11 @@
-import java.io.*;
+import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
 import java.awt.*;
+import java.io.*;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.List;
-import javax.swing.*;
-import javax.swing.table.*;
 import java.util.Objects;
-import java.util.concurrent.*;
 
 // We use SwingWorker to handle each file and progress bar in its own thread
 public class FileSender extends SwingWorker<Integer, Integer> {
@@ -44,12 +43,9 @@ public class FileSender extends SwingWorker<Integer, Integer> {
         //send file name and length
         int value = (int) model.getValueAt(key, 2);
         dos.writeUTF(value == -1 ? "This file was aborted" : file.getName());
-        dos.flush();
         fileSize = file.length();
         dos.writeLong(fileSize);
-        dos.flush();
         dos.writeBoolean(value == -1);
-        dos.flush();
         if (value == -1) {//if it was aborted before it's sending
             myInterface.setSum(sum - file.length());
             publish(-1);
@@ -67,12 +63,10 @@ public class FileSender extends SwingWorker<Integer, Integer> {
             current += n;
             int percentLoaded = (int) (100 * current / fileSize);
             dos.write(buf, 0, n);
-            dos.flush();
             publish(percentLoaded);
             sum -= n;
             if ((int) model.getValueAt(key, 2) == -1) {//if it is aborted while sending
                 dos.writeBoolean(true);//if it was aborted we will send true
-                dos.flush();
                 myInterface.setSum(sum - (fileSize - current));
                 publish(-1);
                 return -1;
@@ -85,8 +79,8 @@ public class FileSender extends SwingWorker<Integer, Integer> {
             myInterface.setLeftTime("Time remaining: " + myInterface.humanReadableTime(estimatedTime, false));
             myInterface.setSpeed("Upload speed: " + myInterface.transformBytesPerSecond(uploadSpeed));
             dos.writeBoolean(false);
-            dos.flush();
         }
+        dos.flush();
         myInterface.setSum(sum);
         bis.close();
         return 1;
